@@ -283,6 +283,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8385a6f5544e3d245880dc19b7a4781b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 85655776}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8385a6f5544e3d245880dc19b7a4781b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 85655779}
   m_SourcePrefab: {fileID: 100100000, guid: 8385a6f5544e3d245880dc19b7a4781b, type: 3}
 --- !u!1 &85655773 stripped
 GameObject:
@@ -323,7 +326,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800c01dcbd186ed4c8eee509d0e1e91d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentGoalTrigger
-  message: {fileID: 1250012696}
+  onReachedGoal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1907664018}
+        m_TargetAssemblyTypeName: GoalLogUI, Assembly-CSharp
+        m_MethodName: AddAgent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &85655776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,9 +355,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AgentMove
   target: {fileID: 163202233}
   agent: {fileID: 85655774}
-  mudCost: 6
+  mudCost: 60
   roadCost: 1
-  waterCost: 3
+  waterCost: 30
+--- !u!136 &85655779
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85655773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &96899711
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +790,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 163202233}
-  - component: {fileID: 163202234}
+  - component: {fileID: 163202237}
+  - component: {fileID: 163202235}
+  - component: {fileID: 163202236}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -773,7 +815,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 133596914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &163202234
+--- !u!65 &163202235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163202232}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &163202236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -785,6 +848,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3cf8e2b585430c42a2be77896b94655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoalTrigger
+--- !u!54 &163202237
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163202232}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &163445683
 Mesh:
   m_ObjectHideFlags: 0
@@ -1048,6 +1138,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d46a0428da50b614786aac5e30459978, type: 3}
       insertIndex: -1
       addedObject: {fileID: 250190662}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d46a0428da50b614786aac5e30459978, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 250190665}
   m_SourcePrefab: {fileID: 100100000, guid: d46a0428da50b614786aac5e30459978, type: 3}
 --- !u!1 &250190659 stripped
 GameObject:
@@ -1088,7 +1181,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800c01dcbd186ed4c8eee509d0e1e91d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AgentGoalTrigger
-  message: {fileID: 1250012696}
+  onReachedGoal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1907664018}
+        m_TargetAssemblyTypeName: GoalLogUI, Assembly-CSharp
+        m_MethodName: AddAgent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &250190662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,8 +1211,31 @@ MonoBehaviour:
   target: {fileID: 163202233}
   agent: {fileID: 250190660}
   mudCost: 2
-  roadCost: 3
+  roadCost: 60
   waterCost: 1
+--- !u!136 &250190665
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250190659}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &257180891
 GameObject:
   m_ObjectHideFlags: 0
@@ -7770,14 +7900,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7211983293727117941, guid: ff4a413b361383a41bb9c9f296a32137, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 7211983293727117941, guid: ff4a413b361383a41bb9c9f296a32137, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -55
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9607,6 +9729,51 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &1907664016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907664017}
+  - component: {fileID: 1907664018}
+  m_Layer: 0
+  m_Name: UI_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907664017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907664016}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.66464, y: -0, z: -8.49631}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907664018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907664016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c08efef0bd17c4ba663b4d4f7edb88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalLogUI
+  goalLog: {fileID: 1250012696}
 --- !u!1 &2033646937
 GameObject:
   m_ObjectHideFlags: 0
@@ -12258,6 +12425,7 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 1907664017}
   - {fileID: 1526409801}
   - {fileID: 133596914}
   - {fileID: 250190658}

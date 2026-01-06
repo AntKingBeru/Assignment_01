@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class GoalTrigger : MonoBehaviour
 {
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Agent"))
+        if (other.TryGetComponent(out AgentGoalTrigger agentEvent))
         {
-           other.GetComponent<AgentGoalTrigger>().AddMessage();
+            agentEvent.TriggerGoal();
         }
     }
 }

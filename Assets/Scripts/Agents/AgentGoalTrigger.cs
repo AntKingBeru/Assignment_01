@@ -1,26 +1,19 @@
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class AgentGoalTrigger : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI message;
-
-    private string _messageText;
-    private bool _shown = false;
+    [System.Serializable]
+    public class AgentReachedGoalEvent : UnityEvent<string> { }
     
+    public AgentReachedGoalEvent onReachedGoal;
+    private bool _triggered;
 
-    private void Start()
+    public void TriggerGoal()
     {
-        _messageText = transform.name + " has reached the goal!";
-    }
-    
-    public void AddMessage()
-    {
-        if (_shown) return;
-
-        _shown = true;
-        
-        message.text += "\n" + _messageText;
-        Debug.Log(_messageText);
+        if  (_triggered) return;
+        _triggered = true;
+        onReachedGoal.Invoke(gameObject.name);
     }
 }
