@@ -4,9 +4,9 @@ public class GoalTrigger : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out AgentGoalTrigger message))
+        if (other.CompareTag("Agent"))
         {
-            message.ShowMessage();
+           other.GetComponent<AgentGoalTrigger>().AddMessage();
         }
     }
 }

@@ -3,12 +3,10 @@ using TMPro;
 
 public class AgentGoalTrigger : MonoBehaviour
 {
-    public GameObject messagePrefab;
-    public Vector3 offset = new Vector3(0, 2f, 0);
+    [SerializeField] private TextMeshProUGUI message;
 
-    private GameObject _instance;
     private string _messageText;
-    private bool _shown;
+    private bool _shown = false;
     
 
     private void Start()
@@ -16,17 +14,13 @@ public class AgentGoalTrigger : MonoBehaviour
         _messageText = transform.name + " has reached the goal!";
     }
     
-    public void ShowMessage()
+    public void AddMessage()
     {
         if (_shown) return;
 
         _shown = true;
         
-        _instance = Instantiate(messagePrefab, transform.position + offset, Quaternion.identity, transform);
-        
-        var text = _instance.GetComponentInChildren<TextMeshProUGUI>();
-        text.text = _messageText;
-        
-        _instance.SetActive(true);
+        message.text += "\n" + _messageText;
+        Debug.Log(_messageText);
     }
 }
