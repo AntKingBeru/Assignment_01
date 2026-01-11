@@ -6,6 +6,9 @@ public class IsometricCameraRotate : MonoBehaviour
     [Header("Camera Points")]
     [SerializeField] private Transform[] cameraPoints;
     
+    [Header("Start Settings")]
+    [SerializeField, Range(0, 3)] private int startIndex = 0;
+    
     [Header("Input Actions")]
     [SerializeField] private InputActionReference rotateLeftInput;
     [SerializeField] private InputActionReference rotateRightInput;
@@ -17,13 +20,21 @@ public class IsometricCameraRotate : MonoBehaviour
     private int _currentIndex = 0;
     private bool _isTransitioning = false;
 
+    private void Awake()
+    {
+        _currentIndex = Mathf.Clamp(startIndex, 0, cameraPoints.Length - 1);
+        
+        var startPoint = cameraPoints[_currentIndex];
+        transform.position = startPoint.position;
+        transform.rotation = startPoint.rotation;
+    }
+
     private void OnEnable()
     {
         rotateLeftInput.action.performed += RotateLeft;
         rotateRightInput.action.performed += RotateRight;
         
-        rotateLeftInput.action.Enable();
-        rotateRightInput.action.Enable();
+        rotateLeftInput.action.actionMap.Enable();
     }
 
     private void OnDisable()
@@ -34,24 +45,33 @@ public class IsometricCameraRotate : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!_isTransitioning) return;
         var target = cameraPoints[_currentIndex];
-            
-        transform.position = Vector3.Lerp(
-            transform.position,
-            target.position,
-            Time.deltaTime * moveSpeed);
-            
-        transform.rotation = Quaternion.Lerp(
-            transform.rotation,
-            target.rotation,
-            rotationSpeed * Time.deltaTime);
 
-        if (!(Vector3.Distance(transform.position, target.position) < 0.01f) ||
-            !(Quaternion.Angle(transform.rotation, target.rotation) < 0.5f)) return;
-        transform.position = target.position;
-        transform.rotation = target.rotation;
-        _isTransitioning = false;
+        if (_isTransitioning)
+        {
+            transform.position = Vector3.Lerp(
+                transform.position,
+                target.position,
+                moveSpeed * Time.deltaTime);
+            
+            transform.rotation = Quaternion.Lerp(
+                transform.rotation,
+                target.rotation,
+                rotationSpeed * Time.deltaTime);
+            
+            if (Vector3.Distance(transform.position, target.position) < 0.1f &&
+                Quaternion.Angle(transform.rotation, target.rotation) < 0.5f)
+            {
+                transform.position = target.position;
+                transform.rotation = target.rotation;
+                _isTransitioning = false;
+            }
+        }
+        else
+        {
+            transform.position = target.position;
+            transform.rotation = target.rotation;
+        }
     }
     
     private void RotateLeft(InputAction.CallbackContext context)
