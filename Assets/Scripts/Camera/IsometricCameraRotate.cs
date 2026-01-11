@@ -76,8 +76,6 @@ public class IsometricCameraRotate : MonoBehaviour
     
     private void RotateLeft(InputAction.CallbackContext context)
     {
-        if (_isTransitioning) return;
-        
         _currentIndex--;
         if (_currentIndex < 0) _currentIndex = cameraPoints.Length - 1;
         
@@ -86,8 +84,6 @@ public class IsometricCameraRotate : MonoBehaviour
     
     private void RotateRight(InputAction.CallbackContext context)
     {
-        if (_isTransitioning) return;
-        
         _currentIndex++;
         if (_currentIndex >= cameraPoints.Length) _currentIndex = 0;
         
