@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Quarry
   m_EditorClassIdentifier: Assembly-CSharp::RoomDefinition
   roomPrefab: {fileID: 1604899166933462152, guid: 653a06d80c4526a48bf82a2263b8bc99, type: 3}
-  ghostPrefab: {fileID: 0}
+  ghostPrefab: {fileID: 1604899166933462152, guid: 51ab70b7bf22e8a4b8ee16293f004337, type: 3}
   attachPoints: []
   woodCost: 2
   stoneCost: 3
