@@ -2112,7 +2112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5320400283737133791}
   m_Layer: 0
-  m_Name: Room_Connector_Back
+  m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

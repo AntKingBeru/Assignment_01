@@ -6,68 +6,70 @@ public class BuildUIController : MonoBehaviour
     public static BuildUIController Instance;
     
     [SerializeField] private GameObject buildImage;
-    [SerializeField] private InputActionReference confirmAction;
-
+    [SerializeField] private RoomGhostPreview ghostPreview;
+    // [SerializeField] private InputActionReference confirmAction;
     [SerializeField] private RoomDefinition[] availableRooms;
     [SerializeField] private RoomChoiceUI[] slots;
     
+    private RoomDefinition _selectedRoom;
     private RoomConnector _activeConnector;
-    private int _selectedIndex;
-    
+
+    public bool IsPlacing { get; private set; }
+
     private void Awake()
     {
         Instance = this;
         buildImage.SetActive(false);
+        
+        foreach (var slot in slots) 
+            slot.Initialize(this);
     }
     
-    private void OnEnable()
-    {
-        confirmAction.action.performed += ConfirmBuild;
-        confirmAction.action.Enable();
-    }
-
-    private void OnDisable()
-    {
-        confirmAction.action.performed -= ConfirmBuild;
-    }
+    // private void OnEnable()
+    // {
+    //     confirmAction.action.performed += ConfirmBuild;
+    //     confirmAction.action.Enable();
+    // }
+    //
+    // private void OnDisable()
+    // {
+    //     confirmAction.action.performed -= ConfirmBuild;
+    // }
     
     public void Show(RoomConnector connector)
     {
         buildImage.SetActive(true);
         
         _activeConnector = connector;
-        _selectedIndex = 0;
+        _selectedRoom = null;
+        IsPlacing = false;
 
         for (var i = 0; i < slots.Length; i++)
         {
             slots[i].Set(availableRooms[i]);
         }
-
-        buildImage.SetActive(true);
     }
     
     public void Hide()
     {
         _activeConnector = null;
+        _selectedRoom = null;
+        IsPlacing = false;
+        
+        ghostPreview.Clear();
         buildImage.SetActive(false);
     }
 
-    private void ConfirmBuild(InputAction.CallbackContext ctx)
+    public void SelectRoom(RoomDefinition room)
     {
-        var slot = slots[_selectedIndex];
+        _selectedRoom = room;
+        IsPlacing = true;
+        
+        ghostPreview.Show(_selectedRoom, _activeConnector);
+    }
 
-        if (!slot.IsAffordable())
-        {
-            Debug.Log("Room not affordable");
-            return;
-        }
-
-        var room = slot.GetRoom();
-
-        ResourceManager.Instance.Spend(room);
-        RoomPlacer.Instance.PlaceRoom(room, _activeConnector);
-
-        _activeConnector.Disable();
-        Hide();
+    public RoomDefinition GetSelectedRoom()
+    {
+        return _selectedRoom;
     }
 }

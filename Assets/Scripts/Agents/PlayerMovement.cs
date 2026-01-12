@@ -18,12 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTarget(InputAction.CallbackContext context)
     {
+        if (BuildUIController.Instance != null && BuildUIController.Instance.IsPlacing) return;
+        
         var ray = _mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
         
         if (!Physics.Raycast(ray, out var hit)) return;
-
-        var clickPoint = hit.point;
         
-        agent.SetDestination(clickPoint);
+        agent.SetDestination(hit.point);
     }
 }

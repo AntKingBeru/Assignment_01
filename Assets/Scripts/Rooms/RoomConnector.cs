@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class RoomConnector : MonoBehaviour
 {
-    [SerializeField] public Transform clickPoint;
-    private bool _playerInRange;
+    [SerializeField] public Transform snapPoint;
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
         
-        _playerInRange = true;
         BuildUIController.Instance.Show(this);
     }
     
@@ -17,7 +15,6 @@ public class RoomConnector : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        _playerInRange = false;
         BuildUIController.Instance.Hide();
     }
     

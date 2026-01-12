@@ -13,7 +13,7 @@ public class RoomPlacer : MonoBehaviour
     {
         var room = Instantiate(roomDef.roomPrefab);
 
-        var targetPoint = connector.clickPoint;
+        var targetPoint = connector.snapPoint;
         var newRoomEntry = FindOppositeConnection(room, targetPoint.forward);
 
         // Align rotation

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Corridor
   m_EditorClassIdentifier: Assembly-CSharp::RoomDefinition
   roomPrefab: {fileID: 6354741584343645224, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+  ghostPrefab: {fileID: 6354741584343645224, guid: e927664f289cbdf4c992fec37b8f2fc9, type: 3}
   maxConnections: 1
   woodCost: 3
   stoneCost: 5

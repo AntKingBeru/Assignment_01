@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5905538661569731731}
   - component: {fileID: 7798983286637708570}
+  - component: {fileID: 7559600467913313573}
   - component: {fileID: 34315110447790906}
   m_Layer: 0
   m_Name: Room_Connector
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5996328694771739215}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -54,6 +55,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1.5, z: 1}
   m_Center: {x: 0, y: 0, z: -0.5}
+--- !u!54 &7559600467913313573
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996328694771739215}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &34315110447790906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,4 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c4a287f30168141877ab14c7df069a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomConnector
-  clickPoint: {fileID: 5905538661569731731}
+  snapPoint: {fileID: 5905538661569731731}
+  direction: 0

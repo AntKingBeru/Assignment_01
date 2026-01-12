@@ -5,12 +5,13 @@ public class RoomDefinition : ScriptableObject
 {
     [Header("Room")]
     public GameObject roomPrefab;
+    public GameObject ghostPrefab;
     
     // [Header("UI")]
     // public Sprite icon;
 
     [Header("Connections")]
-    public int maxConnections;
+    public Transform[] attachPoints;
 
     [Header("Cost")]
     public int woodCost;
