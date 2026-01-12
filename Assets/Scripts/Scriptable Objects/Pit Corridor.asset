@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Pit Corridor
   m_EditorClassIdentifier: Assembly-CSharp::RoomDefinition
   roomPrefab: {fileID: 197972822012111467, guid: 322ca1d28d4208c48a6a828498bd2db5, type: 3}
-  maxConnections: 1
+  ghostPrefab: {fileID: 197972822012111467, guid: 226db1fd04517a94d955b3ae055b3b68, type: 3}
+  attachPoints: []
   woodCost: 4
   stoneCost: 7
