@@ -17,3 +17,6 @@ MonoBehaviour:
   attachPoints: []
   woodCost: 2
   stoneCost: 3
+  maxQuarries: 27
+  maxDistanceFromOrigin: 3
+  roomType: 1

@@ -20,12 +20,6 @@ public class RoomChoiceUI : MonoBehaviour
     private RoomDefinition _room;
     private BuildUIController _buildUI;
     private bool _affordable;
-
-    public void Initialize(BuildUIController buildUI)
-    {
-        _buildUI = buildUI;
-        button.onClick.AddListener(OnClicked);
-    }
     
     public void Set(RoomDefinition roomDef)
     {
@@ -39,12 +33,14 @@ public class RoomChoiceUI : MonoBehaviour
         _affordable = ResourceManager.Instance.CanAfford(_room);
         button.interactable = _affordable;
         UpdateVisualState();
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(OnClicked);
     }
 
     private void OnClicked()
     {
-        if (!_affordable) return;
-        _buildUI.SelectRoom(_room);
+        BuildController.Instance.BeginPlacement(_room, BuildUIController.Instance.ActiveConnector);
     }
     
     private void UpdateVisualState()

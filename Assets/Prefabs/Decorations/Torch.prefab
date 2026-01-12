@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4626195892999547954}
   - component: {fileID: 8361960447620942750}
   - component: {fileID: 7375469881829909570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torch_Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 6286202443002020956}
   - component: {fileID: 3776987739853156270}
   - component: {fileID: 3850523478449474214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9023,7 +9023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86194504322049001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9062,7 +9062,7 @@ GameObject:
   - component: {fileID: 7359657697614381817}
   - component: {fileID: 807695924181998084}
   - component: {fileID: 1673536924965720419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}

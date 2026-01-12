@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9075608937899138915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8538707752873625648}
   - component: {fileID: 8227803575090264662}
   - component: {fileID: 3796337518242462710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 7504152689016983198}
   - component: {fileID: 4575365819332678967}
   - component: {fileID: 7133076780230125558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1665,7 +1665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6411484068238311644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Corridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 2297487042676530570}
   - component: {fileID: 7374292708927036291}
   - component: {fileID: 7220438856474711971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2102,6 +2102,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072478419646587272, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884259790336443216, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 194
@@ -2109,6 +2113,10 @@ PrefabInstance:
     - target: {fileID: 4106402318149093929, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485168719912943198, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489590050198134764, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
@@ -2119,8 +2127,16 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212157058370968109, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2180,6 +2196,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072478419646587272, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884259790336443216, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 194
@@ -2187,6 +2207,10 @@ PrefabInstance:
     - target: {fileID: 4106402318149093929, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485168719912943198, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489590050198134764, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
@@ -2197,8 +2221,16 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212157058370968109, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2262,6 +2294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room_Connector_Front
       objectReference: {fileID: 0}
+    - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2320,6 +2356,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072478419646587272, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884259790336443216, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 194
@@ -2327,6 +2367,10 @@ PrefabInstance:
     - target: {fileID: 4106402318149093929, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485168719912943198, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489590050198134764, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
@@ -2337,8 +2381,16 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212157058370968109, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2398,6 +2450,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072478419646587272, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884259790336443216, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 194
@@ -2405,6 +2461,10 @@ PrefabInstance:
     - target: {fileID: 4106402318149093929, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485168719912943198, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489590050198134764, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
@@ -2415,8 +2475,16 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212157058370968109, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2476,6 +2544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072478419646587272, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884259790336443216, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 194
@@ -2483,6 +2555,10 @@ PrefabInstance:
     - target: {fileID: 4106402318149093929, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485168719912943198, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489590050198134764, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
@@ -2493,8 +2569,16 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212157058370968109, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2554,6 +2638,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1072478419646587272, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884259790336443216, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 194
@@ -2561,6 +2649,10 @@ PrefabInstance:
     - target: {fileID: 4106402318149093929, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
       value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485168719912943198, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489590050198134764, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_VersionIndex
@@ -2571,8 +2663,16 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848125899014503117, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212157058370968109, guid: 06beb7e2615bbe2489c483231887396f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -14,11 +14,18 @@ public class RoomConnector : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
+        
+        if (BuildController.Instance.IsPlacing) BuildController.Instance.CancelPlacement();
 
         BuildUIController.Instance.Hide();
     }
     
     public void Disable()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Consume()
     {
         gameObject.SetActive(false);
     }

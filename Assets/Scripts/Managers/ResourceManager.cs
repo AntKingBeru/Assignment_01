@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class ResourceManager : MonoBehaviour
 {
@@ -8,8 +9,10 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI stoneText;
     [SerializeField] private TextMeshProUGUI woodText;
 
-    public int wood;
-    public int stone;
+    public int Wood { get; private set; }
+    public int Stone {get; private set; }
+    
+    public event Action OnResourcesChanged;
 
     private void Awake()
     {
@@ -18,21 +21,54 @@ public class ResourceManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        
+        Wood = 10;
+        Stone = 10;
 
         Instance = this;
-        stoneText.text = stone.ToString();
-        woodText.text = wood.ToString();
+        stoneText.text = Stone.ToString();
+        woodText.text = Wood.ToString();
     }
 
     public bool CanAfford(RoomDefinition room)
     {
-        return wood >= room.woodCost &&
-               stone >= room.stoneCost;
+        return Wood >= room.woodCost &&
+               Stone >= room.stoneCost;
     }
 
     public void Spend(RoomDefinition room)
     {
-        wood -= room.woodCost;
-        stone -= room.stoneCost;
+        Wood -= room.woodCost;
+        Stone -= room.stoneCost;
+        
+        OnResourcesChanged?.Invoke();
+    }
+
+    public void AddStone(int amount)
+    {
+        Stone += amount;
+        OnResourcesChanged?.Invoke();
+    }
+    
+    public void AddWood(int amount)
+    {
+        Wood += amount;
+        OnResourcesChanged?.Invoke();
+    }
+
+    private void OnEnable()
+    {
+        OnResourcesChanged += Refresh;
+    }
+
+    private void Disable()
+    {
+        OnResourcesChanged -= Refresh;
+    }
+
+    private void Refresh()
+    {
+        stoneText.text = Stone.ToString();
+        woodText.text = Wood.ToString();
     }
 }

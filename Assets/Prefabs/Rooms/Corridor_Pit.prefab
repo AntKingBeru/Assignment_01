@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 771194468176727807}
   - component: {fileID: 590494074771551417}
   - component: {fileID: 1492565541089366124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PitWall_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1133470565339367126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 3329586871798450482}
   - component: {fileID: 4418639569542666150}
   - component: {fileID: 841063154858608229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PitWall_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 287928272594679783}
   - component: {fileID: 5910848443888657365}
   - component: {fileID: 5711943704141271945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PitWall_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 5097076909068253000}
   - component: {fileID: 1155828029811461239}
   - component: {fileID: 1026600698421150432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2410,7 +2410,7 @@ GameObject:
   - component: {fileID: 5285214599640735778}
   - component: {fileID: 574387707251743086}
   - component: {fileID: 1807479139067841987}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FloorBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3679,7 +3679,7 @@ GameObject:
   - component: {fileID: 6767193649413588684}
   - component: {fileID: 191069704959834530}
   - component: {fileID: 8157466734787525066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FloorFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4949,7 +4949,7 @@ GameObject:
   - component: {fileID: 7371488734500687121}
   - component: {fileID: 9196561113801121559}
   - component: {fileID: 1718750838023938465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6233,7 +6233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1808259050699172640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorHinge_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6270,7 +6270,7 @@ GameObject:
   - component: {fileID: 4145032276305342241}
   - component: {fileID: 2474799735186408767}
   - component: {fileID: 5470765959936516764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PitWall_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6621,7 +6621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5882100574935399251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorHinge_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6653,7 +6653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5461332728152629501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6692,7 +6692,7 @@ GameObject:
   - component: {fileID: 1465822307927649334}
   - component: {fileID: 1205131474976174976}
   - component: {fileID: 2903367591914185490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bottom_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

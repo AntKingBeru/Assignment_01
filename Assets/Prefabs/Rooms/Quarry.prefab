@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4910590013950277179}
   - component: {fileID: 921129905658365658}
   - component: {fileID: 4130863227652180167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,7 +1278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7045865229068351246}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 3731880426875681425}
   - component: {fileID: 1247808613886430070}
   - component: {fileID: 6566169924227874241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1673,7 +1673,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8612326243214930530}
-  m_Layer: 0
+  - component: {fileID: 6273871950242897629}
+  m_Layer: 6
   m_Name: Quarry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1710,6 +1711,19 @@ Transform:
   - {fileID: 5320400283737133791}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6273871950242897629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604899166933462152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e5681bf68e66049903772e0692c331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuarryInstance
+  depthFromOrigin: 0
 --- !u!1 &3093325337161689720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,7 +1738,7 @@ GameObject:
   - component: {fileID: 5389191714656191806}
   - component: {fileID: 2425604198025105922}
   - component: {fileID: 3793014863166155572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2075,7 +2089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7051798869642490190}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarryPit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2111,7 +2125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5320400283737133791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -2147,7 +2161,7 @@ GameObject:
   - component: {fileID: 4938961723332529450}
   - component: {fileID: 5350199050904880161}
   - component: {fileID: 2555506235856205816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3416,7 +3430,7 @@ GameObject:
   - component: {fileID: 6389409361022838870}
   - component: {fileID: 5125210231900280299}
   - component: {fileID: 2475951627828692006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarryWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3772,7 +3786,7 @@ GameObject:
   - component: {fileID: 6937295376311640801}
   - component: {fileID: 8116204800674256040}
   - component: {fileID: 1575943736993127626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarryWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4128,7 +4142,7 @@ GameObject:
   - component: {fileID: 4888091588421181659}
   - component: {fileID: 3020599387162490677}
   - component: {fileID: 7262007723480587383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5397,7 +5411,7 @@ GameObject:
   - component: {fileID: 1425600562379492355}
   - component: {fileID: 7695699171355326519}
   - component: {fileID: 4321973792188982571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5753,7 +5767,7 @@ GameObject:
   - component: {fileID: 5835035074519582036}
   - component: {fileID: 2029086739914139483}
   - component: {fileID: 3375788852802376569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6109,7 +6123,7 @@ GameObject:
   - component: {fileID: 489149247504002528}
   - component: {fileID: 7898217337566360013}
   - component: {fileID: 2597800843715594326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7378,7 +7392,7 @@ GameObject:
   - component: {fileID: 6537778384069655178}
   - component: {fileID: 8764912531347782073}
   - component: {fileID: 3619310862179871338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8647,7 +8661,7 @@ GameObject:
   - component: {fileID: 4471768776280827040}
   - component: {fileID: 6899001403259654629}
   - component: {fileID: 225527819086994299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarryWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9003,7 +9017,7 @@ GameObject:
   - component: {fileID: 418987058141796605}
   - component: {fileID: 5319539822492422766}
   - component: {fileID: 5886651597997980747}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10272,7 +10286,7 @@ GameObject:
   - component: {fileID: 8408435778930338573}
   - component: {fileID: 6249862514720336612}
   - component: {fileID: 9093706769751888232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11541,7 +11555,7 @@ GameObject:
   - component: {fileID: 8115553187131126436}
   - component: {fileID: 3683169153419045540}
   - component: {fileID: 6630291090084390888}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarryWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11897,7 +11911,7 @@ GameObject:
   - component: {fileID: 347354485657460416}
   - component: {fileID: 1949278761194459188}
   - component: {fileID: 3862878535649054114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13166,7 +13180,7 @@ GameObject:
   - component: {fileID: 2817111044697687214}
   - component: {fileID: 1300880844739897726}
   - component: {fileID: 122734903171764818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14473,6 +14487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room_Connector_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14491,13 +14509,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8612326243214930530}
     m_Modifications:
+    - target: {fileID: 29046507236381422, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 60819505174743615, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2437457566295784776, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200030409832415772, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3232141163553169941, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14506,6 +14540,10 @@ PrefabInstance:
     - target: {fileID: 5912699718898949102, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135299002882739314, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7636196338827470989, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14569,13 +14607,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8612326243214930530}
     m_Modifications:
+    - target: {fileID: 29046507236381422, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 60819505174743615, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2437457566295784776, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200030409832415772, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3232141163553169941, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14584,6 +14638,10 @@ PrefabInstance:
     - target: {fileID: 5912699718898949102, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135299002882739314, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7636196338827470989, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14691,6 +14749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room_Connector_Left
       objectReference: {fileID: 0}
+    - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14752,6 +14814,10 @@ PrefabInstance:
     - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_Name
       value: Room_Connector_Front
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14833,13 +14899,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8612326243214930530}
     m_Modifications:
+    - target: {fileID: 29046507236381422, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 60819505174743615, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2437457566295784776, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200030409832415772, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3232141163553169941, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14848,6 +14930,10 @@ PrefabInstance:
     - target: {fileID: 5912699718898949102, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135299002882739314, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7636196338827470989, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14911,13 +14997,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8612326243214930530}
     m_Modifications:
+    - target: {fileID: 29046507236381422, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 60819505174743615, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 1343964529787125617, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2437457566295784776, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200030409832415772, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3232141163553169941, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
@@ -14926,6 +15028,10 @@ PrefabInstance:
     - target: {fileID: 5912699718898949102, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135299002882739314, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7636196338827470989, guid: fb1a5f1289df5c7468a47038247924d7, type: 3}
       propertyPath: m_VersionIndex

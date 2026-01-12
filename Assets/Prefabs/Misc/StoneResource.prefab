@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6595001113497882339}
   - component: {fileID: 7370452467048519530}
-  m_Layer: 0
-  m_Name: Resource
+  - component: {fileID: 5285149820338485706}
+  m_Layer: 6
+  m_Name: StoneResource
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -53,3 +54,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5285149820338485706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6432736346538915903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba1c301c25ff234e959b05bf40afffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuarryMinePoint
+  stonePerHarvest: 5
+  cooldownSeconds: 30

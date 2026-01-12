@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5750499319604546469}
   - component: {fileID: 7670737911285900278}
   - component: {fileID: 1096914707368234748}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 3454165172309636750}
   - component: {fileID: 9031559280644467217}
   - component: {fileID: 5784973106346473506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8206950685990850438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 3658632106686752345}
   - component: {fileID: 1573180228136773904}
   - component: {fileID: 1986873167325753947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 123697616754807208}
   - component: {fileID: 6967410591880682403}
   - component: {fileID: 1110250235348127776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5121071913064924302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Intersection_Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 5345193849061959517}
   - component: {fileID: 4326549017297418011}
   - component: {fileID: 6507788993139675524}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 722422926071331421}
   - component: {fileID: 3284441637867657807}
   - component: {fileID: 2944491391145193093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 1799380760299428698}
   - component: {fileID: 2303846079921866856}
   - component: {fileID: 8589579444923453001}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 5835705448916638956}
   - component: {fileID: 7408734270586348721}
   - component: {fileID: 6160451776930348991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192275700408998050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 5498166284418438151}
   - component: {fileID: 6635377992629742951}
   - component: {fileID: 5656887136043090779}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4967508385686010794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3525941655674974359}
   - component: {fileID: 3608976966108720043}
   - component: {fileID: 3934791632903415976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chest_Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 8373824784502599479}
   - component: {fileID: 4384925854869575383}
   - component: {fileID: 8316162044378489372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chest_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
