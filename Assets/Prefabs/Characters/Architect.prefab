@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8280505836748801486}
   - component: {fileID: 3403641619472360544}
   - component: {fileID: 6225944762669293451}
+  - component: {fileID: 840207962627434372}
   m_Layer: 0
   m_Name: Architect
   m_TagString: Player
@@ -126,7 +127,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1479372276
   m_Radius: 0.675
-  m_Speed: 3
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -152,3 +153,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   agent: {fileID: 3403641619472360544}
   targetInput: {fileID: 0}
+--- !u!114 &840207962627434372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4562970420373111853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7356d904d2226074dacdfb233b5cbb31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerControls
+  harvestAction: {fileID: 0}
