@@ -8,14 +8,9 @@ public class PlayerControls : MonoBehaviour
     
     private QuarryMinePoint _currentMinePoint;
 
-    private void OnEnable()
+    private void Start()
     {
         harvestAction.action.performed += OnHarvest;
-    }
-
-    private void OnDisable()
-    {
-        harvestAction.action.performed -= OnHarvest;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -288,7 +288,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 34
+  m_VersionIndex: 52
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 34
+  m_VersionIndex: 52
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 34
+  m_VersionIndex: 52
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1356,7 +1356,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 34
+  m_VersionIndex: 52
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1489,7 +1489,7 @@ Transform:
   m_GameObject: {fileID: 6532246353142274872}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 3}
+  m_LocalPosition: {x: 0, y: 1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2654,7 +2654,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 760
+  m_VersionIndex: 778
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2814,7 +2814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_Name
-      value: Room_Connector_Right
+      value: Room_Connector_Left
       objectReference: {fileID: 0}
     - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_Layer
@@ -2880,7 +2880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_Name
-      value: Room_Connector_Left
+      value: Room_Connector_Right
       objectReference: {fileID: 0}
     - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_Layer
@@ -2914,11 +2914,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2926,7 +2926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2938,7 +2938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905538661569731731, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
