@@ -23,6 +23,7 @@ public class RoomDefinition : ScriptableObject
     [Header("Cost")]
     public int woodCost;
     public int stoneCost;
+    public int eggsCost = 0;
 
     [Header("Quarry Rules")]
     public int maxQuarries = 27;

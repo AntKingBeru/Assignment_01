@@ -102,9 +102,10 @@ GameObject:
   - component: {fileID: 3547647798647838394}
   - component: {fileID: 5282229228675413912}
   - component: {fileID: 1346650895622871503}
+  - component: {fileID: -1184836869594760621}
   m_Layer: 0
   m_Name: Egg
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,4 +191,18 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  minLandingVelocity: 0.1
+  onLanded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-1184836869594760621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697889945756207517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccf8de440c0e064c89e1c0c0aaf11dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggFirstPickup

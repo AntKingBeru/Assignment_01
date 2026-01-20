@@ -10,5 +10,7 @@ public class EggsDropTrigger : MonoBehaviour
         Instantiate(eggPrefab, spawnPoints[0].position, Quaternion.identity);
         Instantiate(shellsPrefab, spawnPoints[1].position, Quaternion.identity);
         Instantiate(shellsPrefab, spawnPoints[2].position, Quaternion.identity);
+
+        EggFirstPickup.Instance.RegisterEggs();
     }
 }

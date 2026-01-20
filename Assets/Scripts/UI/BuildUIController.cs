@@ -6,6 +6,7 @@ public class BuildUIController : MonoBehaviour
     
     [SerializeField] private GameObject buildImage;
     [SerializeField] private GameObject interactUI;
+    [SerializeField] private GameObject eggsUI;
     [SerializeField] private RoomGhostPreview ghostPreview;
     [SerializeField] private RoomDefinition[] availableRooms;
     [SerializeField] private RoomChoiceUI[] slots;
@@ -20,6 +21,7 @@ public class BuildUIController : MonoBehaviour
         Instance = this;
         buildImage.SetActive(false);
         interactUI.SetActive(false);
+        eggsUI.SetActive(false);
     }
     
     public void Show(RoomConnector connector)
@@ -65,5 +67,10 @@ public class BuildUIController : MonoBehaviour
     public void ActivateInteract(bool state)
     {
         interactUI.SetActive(state);
+    }
+    
+    public void ActivateEggs()
+    {
+        eggsUI.SetActive(true);
     }
 }
