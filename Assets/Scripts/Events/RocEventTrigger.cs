@@ -5,8 +5,9 @@ public class RocEventTrigger : MonoBehaviour
 {
     [SerializeField] private Transform startPoint, endPoint, triggerPoint;
     [SerializeField] private float travelTime;
+    [SerializeField, Range(0f, 1f)] private float midPointTime = 0.33f;
     [SerializeField] private GameObject bird;
-    // [SerializeField] private UnityEvent onMidPointReached;
+    [SerializeField] private UnityEvent onMidPointReached;
     // [SerializeField] private AudioClip rocCaw;
     
     private bool _started = false, _midPointTriggered = false; 
@@ -14,8 +15,11 @@ public class RocEventTrigger : MonoBehaviour
 
     private void Start()
     {
-        bird.transform.position = startPoint.position;
-        bird.SetActive(false);
+        if (bird)
+        {
+            bird.SetActive(false);
+            bird.transform.position = startPoint.position;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,15 +33,17 @@ public class RocEventTrigger : MonoBehaviour
     private void StartMovement()
     {
         _started = true;
-        bird.SetActive(true);
         _elapsedTime = 0f;
+        _midPointTriggered = false;
+        
+        bird.SetActive(true);
 
         bird.transform.LookAt(endPoint.position);
     }
 
     private void Update()
     {
-        if (!_started) return;
+        if (!_started || !bird) return;
 
         // PlayCaw();
         
@@ -46,26 +52,28 @@ public class RocEventTrigger : MonoBehaviour
         
         bird.transform.position = Vector3.Lerp(startPoint.position, endPoint.position, time);
 
-        CheckMidPoint();
+        CheckMidPoint(time);
         
         if (time >= 1f)
         {
-            _started = false;
-            bird.SetActive(false);
+            FinishMovement();
         }
     }
 
-    private void CheckMidPoint()
+    private void FinishMovement()
     {
-        if (_midPointTriggered) return;
-        
-        var distanceToMid = Vector3.Distance(bird.transform.position, triggerPoint.position);
+        bird.SetActive(false);
+    }
 
-        if (distanceToMid < 0.1f)
+    private void CheckMidPoint(float time)
+    {
+        if (_midPointTriggered)
+            return;
+
+        if (time >= midPointTime)
         {
             _midPointTriggered = true;
-            // onMidPointReached.Invoke();
-            // PlayCaw();
+            onMidPointReached.Invoke();
         }
     }
 
