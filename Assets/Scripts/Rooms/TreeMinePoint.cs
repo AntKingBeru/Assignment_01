@@ -13,6 +13,7 @@ public class TreeMinePoint : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         _playerInside = true;
+        BuildUIController.Instance.ActivateInteract(true);
     }
 
     private void OnTriggerExit(Collider other)
@@ -20,6 +21,7 @@ public class TreeMinePoint : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         _playerInside = false;
+        BuildUIController.Instance.ActivateInteract(false);
     }
 
     public bool CanHarvest()

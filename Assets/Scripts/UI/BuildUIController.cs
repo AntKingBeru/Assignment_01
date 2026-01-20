@@ -5,6 +5,7 @@ public class BuildUIController : MonoBehaviour
     public static BuildUIController Instance;
     
     [SerializeField] private GameObject buildImage;
+    [SerializeField] private GameObject interactUI;
     [SerializeField] private RoomGhostPreview ghostPreview;
     [SerializeField] private RoomDefinition[] availableRooms;
     [SerializeField] private RoomChoiceUI[] slots;
@@ -18,6 +19,7 @@ public class BuildUIController : MonoBehaviour
     {
         Instance = this;
         buildImage.SetActive(false);
+        interactUI.SetActive(false);
     }
     
     public void Show(RoomConnector connector)
@@ -58,5 +60,10 @@ public class BuildUIController : MonoBehaviour
     public RoomDefinition GetSelectedRoom()
     {
         return _selectedRoom;
+    }
+
+    public void ActivateInteract(bool state)
+    {
+        interactUI.SetActive(state);
     }
 }
