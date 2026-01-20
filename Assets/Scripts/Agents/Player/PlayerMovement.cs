@@ -53,6 +53,6 @@ public class PlayerMovement : MonoBehaviour
  
      private bool IsPointerOverUI()
      {
-         return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+         return EventSystem.current && EventSystem.current.IsPointerOverGameObject();
      }
  }
