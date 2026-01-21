@@ -18,10 +18,28 @@ public class BuildUIController : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
         Instance = this;
         buildImage.SetActive(false);
         interactUI.SetActive(false);
         eggsUI.SetActive(false);
+    }
+
+    private void Start()
+    {
+        ResourceManager.Instance.OnEggsUnlocked += ActivateEggs;
+        
+        if (ResourceManager.Instance.Eggs > 0) ActivateEggs();
+    }
+    
+    private void OnDisable()
+    {
+        if (ResourceManager.Instance != null) ResourceManager.Instance.OnEggsUnlocked -= ActivateEggs;
     }
     
     public void Show(RoomConnector connector)

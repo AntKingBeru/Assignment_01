@@ -12,10 +12,12 @@ public class ResourceManager : MonoBehaviour
 
     public int Wood { get; private set; }
     public int Stone {get; private set; }
-    
     public int Eggs {get; private set; }
     
     public event Action OnResourcesChanged;
+    public event Action OnEggsUnlocked;
+    
+    private bool eggsUnlocked = false;
 
     private void Awake()
     {
@@ -29,9 +31,7 @@ public class ResourceManager : MonoBehaviour
         Stone = 10;
 
         Instance = this;
-        stoneText.text = Stone.ToString();
-        woodText.text = Wood.ToString();
-        eggsText.text = Eggs.ToString();
+        Refresh();
     }
 
     public bool CanAfford(RoomDefinition room)
@@ -64,7 +64,15 @@ public class ResourceManager : MonoBehaviour
 
     public void AddEggs(int amount)
     {
+        var previousEggs = Eggs;
         Eggs += amount;
+
+        if (!eggsUnlocked && previousEggs == 0 && Eggs > 0)
+        {
+            eggsUnlocked = true;
+            OnEggsUnlocked?.Invoke();
+        }
+        
         OnResourcesChanged?.Invoke();
     }
 
@@ -82,5 +90,6 @@ public class ResourceManager : MonoBehaviour
     {
         stoneText.text = Stone.ToString();
         woodText.text = Wood.ToString();
+        eggsText.text = Eggs.ToString();
     }
 }

@@ -113,6 +113,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "MinimapZoom",
+                    "type": "Value",
+                    "id": "17867920-c8aa-433f-8620-7848956e46c7",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -421,6 +430,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "CancelBuild",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3dcdeb35-4846-48af-b8dd-dd4d1e9fccf9",
+                    "path": "<Keyboard>/equals",
+                    "interactions": "",
+                    "processors": "Scale",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "MinimapZoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbd2187b-bd32-4e1f-b3cd-5b4d3a04a212",
+                    "path": "<Keyboard>/minus",
+                    "interactions": "",
+                    "processors": "Scale(factor=-1)",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "MinimapZoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "705d3dfe-635c-4270-b4f4-1e91d53d4966",
+                    "path": "<Keyboard>/numpadPlus",
+                    "interactions": "",
+                    "processors": "Scale",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "MinimapZoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "253d5f37-efb0-40c7-917a-faccaf550345",
+                    "path": "<Keyboard>/numpadMinus",
+                    "interactions": "",
+                    "processors": "Scale(factor=-1)",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "MinimapZoom",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

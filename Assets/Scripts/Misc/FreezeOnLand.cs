@@ -4,17 +4,14 @@ using UnityEngine.Events;
 public class FreezeOnLand : MonoBehaviour
 {
     [SerializeField] private LayerMask groundLayer;
-    
-    public UnityEvent onLanded;
+    [SerializeField] private Collider physicsCollider;
 
     private Rigidbody _rb;
-    private Collider _collider;
     private bool _landed = false;
     
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        _collider = GetComponent<Collider>();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -32,12 +29,12 @@ public class FreezeOnLand : MonoBehaviour
         
         _rb.linearVelocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;
-        
         _rb.isKinematic = true; 
         _rb.useGravity = false;
-        
-        _collider.isTrigger = true;
-        
-        onLanded.Invoke();
+
+        if (physicsCollider != null)
+        {
+            physicsCollider.enabled = false;
+        }
     }
 }

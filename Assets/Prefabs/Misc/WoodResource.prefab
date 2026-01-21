@@ -94,5 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452d023c10ad70045bbfe31adc7a1304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TreeMinePoint
-  woodPerHarvest: 5
+  interactionCollider: {fileID: 7370452467048519530}
   cooldownSeconds: 30
+  woodPerHarvest: 5

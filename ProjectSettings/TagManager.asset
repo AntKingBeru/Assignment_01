@@ -19,6 +19,7 @@ TagManager:
   - Obstacle
   - Forest
   - Mountain
+  - Main
   - 
   - 
   - 
@@ -37,11 +38,13 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - MimimapIcons
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: MinimapIcons
+    uniqueID: 3877842223
     locked: 0
   m_RenderingLayers:
   - Default

@@ -99,10 +99,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7720559968640995248}
-  - component: {fileID: 3547647798647838394}
+  - component: {fileID: 3947034175396517216}
+  - component: {fileID: 3364572434362982753}
   - component: {fileID: 5282229228675413912}
   - component: {fileID: 1346650895622871503}
-  - component: {fileID: -1184836869594760621}
+  - component: {fileID: 5607516142124449569}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Egg
@@ -126,8 +127,8 @@ Transform:
   - {fileID: 2955892920505003914}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &3547647798647838394
-CapsuleCollider:
+--- !u!65 &3947034175396517216
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,10 +145,29 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Height: 1.5
-  m_Direction: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &3364572434362982753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697889945756207517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5282229228675413912
 Rigidbody:
@@ -191,10 +211,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  onLanded:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &-1184836869594760621
+  physicsCollider: {fileID: 3947034175396517216}
+--- !u!114 &5607516142124449569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,6 +221,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8697889945756207517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fccf8de440c0e064c89e1c0c0aaf11dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 45a4d226ef39c0244805c5d5e48002f1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EggFirstPickup
+  m_EditorClassIdentifier: Assembly-CSharp::EggPickupPoint
+  interactionCollider: {fileID: 3364572434362982753}
+  cooldownSeconds: 30
+  eggsPerHarvest: 1

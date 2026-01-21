@@ -94,5 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba1c301c25ff234e959b05bf40afffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuarryMinePoint
-  stonePerHarvest: 5
+  interactionCollider: {fileID: 7370452467048519530}
   cooldownSeconds: 30
+  stonePerHarvest: 5
