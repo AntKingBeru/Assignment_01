@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 87492719641452501}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -1, z: 0}
+  m_LocalPosition: {x: -2.5, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -163,45 +163,45 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -0.5, y: -1, z: 2.5}
-  - {x: 0.5, y: -1, z: 2.5}
-  - {x: -0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: -1, z: 2.5}
-  - {x: 0.5, y: -1, z: -2.5}
-  - {x: 0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: 1, z: -2.5}
-  - {x: 0.5, y: -1, z: -2.5}
-  - {x: -0.5, y: -1, z: -2.5}
-  - {x: 0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: -1, z: -2.5}
-  - {x: -0.5, y: -1, z: 2.5}
-  - {x: -0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: 1, z: 2.5}
-  - {x: -0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: 1, z: 2.5}
-  - {x: -0.5, y: 1, z: -2.5}
-  - {x: 0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: -1, z: -2.5}
-  - {x: 0.5, y: -1, z: -2.5}
-  - {x: -0.5, y: -1, z: 2.5}
-  - {x: 0.5, y: -1, z: 2.5}
+  - {x: -0.5, y: -2, z: 2.5}
+  - {x: 0.5, y: -2, z: 2.5}
+  - {x: -0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: -2, z: 2.5}
+  - {x: 0.5, y: -2, z: -2.5}
+  - {x: 0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: 2, z: -2.5}
+  - {x: 0.5, y: -2, z: -2.5}
+  - {x: -0.5, y: -2, z: -2.5}
+  - {x: 0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: -2, z: -2.5}
+  - {x: -0.5, y: -2, z: 2.5}
+  - {x: -0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: 2, z: 2.5}
+  - {x: -0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: 2, z: 2.5}
+  - {x: -0.5, y: 2, z: -2.5}
+  - {x: 0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: -2, z: -2.5}
+  - {x: 0.5, y: -2, z: -2.5}
+  - {x: -0.5, y: -2, z: 2.5}
+  - {x: 0.5, y: -2, z: 2.5}
   m_Textures0:
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 5, y: -1}
-  - {x: 0, y: -1}
+  - {x: 5, y: -3}
+  - {x: 0, y: -3}
   - {x: 5, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 5, y: -1}
-  - {x: 0, y: -1}
+  - {x: 5, y: -3}
+  - {x: 0, y: -3}
   - {x: 5, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 89
+  m_VersionIndex: 147
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -268,8 +268,8 @@ MonoBehaviour:
   m_Shape:
     rid: 7680341850231407266
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 89
-  m_Size: {x: 1, y: 2, z: 5}
+  m_UnmodifiedMeshVersion: 144
+  m_Size: {x: 1, y: 4, z: 5}
   m_LocalCenter: {x: 0, y: 0, z: 0}
   references:
     version: 2
@@ -424,7 +424,7 @@ Transform:
   m_GameObject: {fileID: 1845175362904565250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: -2}
+  m_LocalPosition: {x: 0, y: -2, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -557,45 +557,45 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -3, y: -1, z: 0.5}
-  - {x: 3, y: -1, z: 0.5}
-  - {x: -3, y: 1, z: 0.5}
-  - {x: 3, y: 1, z: 0.5}
-  - {x: 3, y: -1, z: 0.5}
-  - {x: 3, y: -1, z: -0.5}
-  - {x: 3, y: 1, z: 0.5}
-  - {x: 3, y: 1, z: -0.5}
-  - {x: 3, y: -1, z: -0.5}
-  - {x: -3, y: -1, z: -0.5}
-  - {x: 3, y: 1, z: -0.5}
-  - {x: -3, y: 1, z: -0.5}
-  - {x: -3, y: -1, z: -0.5}
-  - {x: -3, y: -1, z: 0.5}
-  - {x: -3, y: 1, z: -0.5}
-  - {x: -3, y: 1, z: 0.5}
-  - {x: -3, y: 1, z: 0.5}
-  - {x: 3, y: 1, z: 0.5}
-  - {x: -3, y: 1, z: -0.5}
-  - {x: 3, y: 1, z: -0.5}
-  - {x: -3, y: -1, z: -0.5}
-  - {x: 3, y: -1, z: -0.5}
-  - {x: -3, y: -1, z: 0.5}
-  - {x: 3, y: -1, z: 0.5}
+  - {x: -3, y: -2, z: 0.5}
+  - {x: 3, y: -2, z: 0.5}
+  - {x: -3, y: 2, z: 0.5}
+  - {x: 3, y: 2, z: 0.5}
+  - {x: 3, y: -2, z: 0.5}
+  - {x: 3, y: -2, z: -0.5}
+  - {x: 3, y: 2, z: 0.5}
+  - {x: 3, y: 2, z: -0.5}
+  - {x: 3, y: -2, z: -0.5}
+  - {x: -3, y: -2, z: -0.5}
+  - {x: 3, y: 2, z: -0.5}
+  - {x: -3, y: 2, z: -0.5}
+  - {x: -3, y: -2, z: -0.5}
+  - {x: -3, y: -2, z: 0.5}
+  - {x: -3, y: 2, z: -0.5}
+  - {x: -3, y: 2, z: 0.5}
+  - {x: -3, y: 2, z: 0.5}
+  - {x: 3, y: 2, z: 0.5}
+  - {x: -3, y: 2, z: -0.5}
+  - {x: 3, y: 2, z: -0.5}
+  - {x: -3, y: -2, z: -0.5}
+  - {x: 3, y: -2, z: -0.5}
+  - {x: -3, y: -2, z: 0.5}
+  - {x: 3, y: -2, z: 0.5}
   m_Textures0:
-  - {x: 6, y: -1}
-  - {x: 0, y: -1}
+  - {x: 6, y: -3}
+  - {x: 0, y: -3}
   - {x: 6, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 6, y: -1}
-  - {x: 0, y: -1}
+  - {x: 6, y: -3}
+  - {x: 0, y: -3}
   - {x: 6, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 67
+  m_VersionIndex: 125
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -662,8 +662,8 @@ MonoBehaviour:
   m_Shape:
     rid: 7680341850231407266
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 67
-  m_Size: {x: 6, y: 2, z: 1}
+  m_UnmodifiedMeshVersion: 122
+  m_Size: {x: 6, y: 4, z: 1}
   m_LocalCenter: {x: 0, y: 0, z: 0}
   references:
     version: 2
@@ -780,7 +780,7 @@ Transform:
   m_GameObject: {fileID: 2159696270611677308}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -1, z: 0}
+  m_LocalPosition: {x: 2.5, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -913,45 +913,45 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -0.5, y: -1, z: 2.5}
-  - {x: 0.5, y: -1, z: 2.5}
-  - {x: -0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: -1, z: 2.5}
-  - {x: 0.5, y: -1, z: -2.5}
-  - {x: 0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: 1, z: -2.5}
-  - {x: 0.5, y: -1, z: -2.5}
-  - {x: -0.5, y: -1, z: -2.5}
-  - {x: 0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: -1, z: -2.5}
-  - {x: -0.5, y: -1, z: 2.5}
-  - {x: -0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: 1, z: 2.5}
-  - {x: -0.5, y: 1, z: 2.5}
-  - {x: 0.5, y: 1, z: 2.5}
-  - {x: -0.5, y: 1, z: -2.5}
-  - {x: 0.5, y: 1, z: -2.5}
-  - {x: -0.5, y: -1, z: -2.5}
-  - {x: 0.5, y: -1, z: -2.5}
-  - {x: -0.5, y: -1, z: 2.5}
-  - {x: 0.5, y: -1, z: 2.5}
+  - {x: -0.5, y: -2, z: 2.5}
+  - {x: 0.5, y: -2, z: 2.5}
+  - {x: -0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: -2, z: 2.5}
+  - {x: 0.5, y: -2, z: -2.5}
+  - {x: 0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: 2, z: -2.5}
+  - {x: 0.5, y: -2, z: -2.5}
+  - {x: -0.5, y: -2, z: -2.5}
+  - {x: 0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: -2, z: -2.5}
+  - {x: -0.5, y: -2, z: 2.5}
+  - {x: -0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: 2, z: 2.5}
+  - {x: -0.5, y: 2, z: 2.5}
+  - {x: 0.5, y: 2, z: 2.5}
+  - {x: -0.5, y: 2, z: -2.5}
+  - {x: 0.5, y: 2, z: -2.5}
+  - {x: -0.5, y: -2, z: -2.5}
+  - {x: 0.5, y: -2, z: -2.5}
+  - {x: -0.5, y: -2, z: 2.5}
+  - {x: 0.5, y: -2, z: 2.5}
   m_Textures0:
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 5, y: -1}
-  - {x: 0, y: -1}
+  - {x: 5, y: -3}
+  - {x: 0, y: -3}
   - {x: 5, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 5, y: -1}
-  - {x: 0, y: -1}
+  - {x: 5, y: -3}
+  - {x: 0, y: -3}
   - {x: 5, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 89
+  m_VersionIndex: 147
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_Shape:
     rid: 7680341850231407266
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 89
-  m_Size: {x: 1, y: 2, z: 5}
+  m_UnmodifiedMeshVersion: 144
+  m_Size: {x: 1, y: 4, z: 5}
   m_LocalCenter: {x: 0, y: 0, z: 0}
   references:
     version: 2
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 41
+  m_VersionIndex: 77
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3555,7 +3555,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 71
+  m_VersionIndex: 107
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4824,7 +4824,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 71
+  m_VersionIndex: 107
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6094,7 +6094,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 41
+  m_VersionIndex: 77
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6286,7 +6286,7 @@ Transform:
   m_GameObject: {fileID: 6612685798243697361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 2}
+  m_LocalPosition: {x: 0, y: -2, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6419,45 +6419,45 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -3, y: -1, z: 0.5}
-  - {x: 3, y: -1, z: 0.5}
-  - {x: -3, y: 1, z: 0.5}
-  - {x: 3, y: 1, z: 0.5}
-  - {x: 3, y: -1, z: 0.5}
-  - {x: 3, y: -1, z: -0.5}
-  - {x: 3, y: 1, z: 0.5}
-  - {x: 3, y: 1, z: -0.5}
-  - {x: 3, y: -1, z: -0.5}
-  - {x: -3, y: -1, z: -0.5}
-  - {x: 3, y: 1, z: -0.5}
-  - {x: -3, y: 1, z: -0.5}
-  - {x: -3, y: -1, z: -0.5}
-  - {x: -3, y: -1, z: 0.5}
-  - {x: -3, y: 1, z: -0.5}
-  - {x: -3, y: 1, z: 0.5}
-  - {x: -3, y: 1, z: 0.5}
-  - {x: 3, y: 1, z: 0.5}
-  - {x: -3, y: 1, z: -0.5}
-  - {x: 3, y: 1, z: -0.5}
-  - {x: -3, y: -1, z: -0.5}
-  - {x: 3, y: -1, z: -0.5}
-  - {x: -3, y: -1, z: 0.5}
-  - {x: 3, y: -1, z: 0.5}
+  - {x: -3, y: -2, z: 0.5}
+  - {x: 3, y: -2, z: 0.5}
+  - {x: -3, y: 2, z: 0.5}
+  - {x: 3, y: 2, z: 0.5}
+  - {x: 3, y: -2, z: 0.5}
+  - {x: 3, y: -2, z: -0.5}
+  - {x: 3, y: 2, z: 0.5}
+  - {x: 3, y: 2, z: -0.5}
+  - {x: 3, y: -2, z: -0.5}
+  - {x: -3, y: -2, z: -0.5}
+  - {x: 3, y: 2, z: -0.5}
+  - {x: -3, y: 2, z: -0.5}
+  - {x: -3, y: -2, z: -0.5}
+  - {x: -3, y: -2, z: 0.5}
+  - {x: -3, y: 2, z: -0.5}
+  - {x: -3, y: 2, z: 0.5}
+  - {x: -3, y: 2, z: 0.5}
+  - {x: 3, y: 2, z: 0.5}
+  - {x: -3, y: 2, z: -0.5}
+  - {x: 3, y: 2, z: -0.5}
+  - {x: -3, y: -2, z: -0.5}
+  - {x: 3, y: -2, z: -0.5}
+  - {x: -3, y: -2, z: 0.5}
+  - {x: 3, y: -2, z: 0.5}
   m_Textures0:
-  - {x: 6, y: -1}
-  - {x: 0, y: -1}
+  - {x: 6, y: -3}
+  - {x: 0, y: -3}
   - {x: 6, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 6, y: -1}
-  - {x: 0, y: -1}
+  - {x: 6, y: -3}
+  - {x: 0, y: -3}
   - {x: 6, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -1}
-  - {x: 0, y: -1}
+  - {x: 1, y: -3}
+  - {x: 0, y: -3}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
@@ -6504,7 +6504,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 67
+  m_VersionIndex: 125
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6524,8 +6524,8 @@ MonoBehaviour:
   m_Shape:
     rid: 7680341850231407266
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 67
-  m_Size: {x: 6, y: 2, z: 1}
+  m_UnmodifiedMeshVersion: 122
+  m_Size: {x: 6, y: 4, z: 1}
   m_LocalCenter: {x: 0, y: 0, z: 0}
   references:
     version: 2
@@ -6692,6 +6692,7 @@ GameObject:
   - component: {fileID: 1465822307927649334}
   - component: {fileID: 1205131474976174976}
   - component: {fileID: 2903367591914185490}
+  - component: {fileID: 5080380560354594609}
   m_Layer: 6
   m_Name: Bottom_Floor
   m_TagString: Untagged
@@ -6708,7 +6709,7 @@ Transform:
   m_GameObject: {fileID: 8410754890577490008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7837,7 +7838,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 800
+  m_VersionIndex: 836
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -7947,6 +7948,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &5080380560354594609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8410754890577490008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 4
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &6525650949229385283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7955,13 +7976,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 581398594455584876, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 776
+      objectReference: {fileID: 0}
+    - target: {fileID: 781040047719801147, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 841912787080108085, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447683796353433228, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804890306625435637, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178956690625669353, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 103
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528799763168084537, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 3755998373014015483, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930474113885212790, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560540123153538, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292123907402979599, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749997014515701756, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846333672796912045, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 103
+      objectReference: {fileID: 0}
+    - target: {fileID: 4875771024740834736, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 776
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543957031122607749, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 6086792482368587187, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 191
+      objectReference: {fileID: 0}
     - target: {fileID: 6354741584343645224, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
       propertyPath: m_Name
       value: Corridor_Pit
       objectReference: {fileID: 0}
     - target: {fileID: 6411484068238311644, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6411484068238311644, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7998,6 +8083,30 @@ PrefabInstance:
     - target: {fileID: 6411484068238311644, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627032462291390791, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225776354030683273, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295481470089379207, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504605752587678974, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592061658640600560, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567056351960378185, guid: c344a7eaf3f5cf845bcdcafc6af53917, type: 3}
+      propertyPath: m_VersionIndex
+      value: 191
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

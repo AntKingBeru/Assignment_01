@@ -13,7 +13,7 @@ NavMeshProjectSettings:
     cost: 1
   - name: TrapDoor
     cost: 1
-  - name: 
+  - name: Spikes
     cost: 1
   - name: 
     cost: 1
