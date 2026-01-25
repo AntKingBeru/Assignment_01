@@ -248,7 +248,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 197
+  m_VersionIndex: 263
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 95
+  m_VersionIndex: 161
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 47
+  m_VersionIndex: 113
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2031,6 +2031,7 @@ GameObject:
   - component: {fileID: 5107784699879005510}
   - component: {fileID: 1519661117662193884}
   - component: {fileID: 9004367338418265622}
+  - component: {fileID: 4712798980603475292}
   m_Layer: 12
   m_Name: Core
   m_TagString: Untagged
@@ -10566,7 +10567,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 21
+  m_VersionIndex: 87
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10676,6 +10677,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &4712798980603475292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461749488207258936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b283536912947468e1b770449f5784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoreBobber
+  bobHeight: 0.125
+  bobSpeed: 1.2
+  emissionColor: {r: 1, g: 0, b: 1, a: 1}
+  emissionMinIntensity: 1.5
+  emissionMaxIntensity: 3.5
+  emissionPulseSpeed: 1.5
 --- !u!1 &2916816349454094072
 GameObject:
   m_ObjectHideFlags: 0
@@ -10958,7 +10977,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 197
+  m_VersionIndex: 263
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -11693,7 +11712,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 27
+  m_VersionIndex: 93
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -12051,7 +12070,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 95
+  m_VersionIndex: 161
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -12407,7 +12426,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 139
+  m_VersionIndex: 205
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -12763,7 +12782,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 139
+  m_VersionIndex: 205
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -13119,7 +13138,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 139
+  m_VersionIndex: 205
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -13516,7 +13535,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 139
+  m_VersionIndex: 205
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14116,7 +14135,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 29
+  m_VersionIndex: 95
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14282,6 +14301,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5996328694771739215, guid: 9ee59ac470e357244afc45e88d395143, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14350,11 +14373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5921142876399564050, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 67
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 7658440221893346981, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 91
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 7667154871228800206, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_Layer
@@ -14432,11 +14455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5921142876399564050, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 67
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 7658440221893346981, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 91
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 7667154871228800206, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_Layer
@@ -14514,11 +14537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5921142876399564050, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 67
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 7658440221893346981, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 91
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 7667154871228800206, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_Layer
@@ -14596,11 +14619,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5921142876399564050, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 67
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 7658440221893346981, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_VersionIndex
-      value: 91
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 7667154871228800206, guid: f2028db00a1976d4a98c86ff9e2229fb, type: 3}
       propertyPath: m_Layer
